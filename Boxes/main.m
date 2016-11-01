@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Box.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+    
+        
+    Box *newBox = [[Box alloc] initWithHeight:10.0 andWidth: 10.0 andLength: 10.0];
+    NSLog(@"The volume of the box is %f", [newBox calculateVolume]);
+        
+    
     return 0;
 }
